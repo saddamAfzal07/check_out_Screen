@@ -1,4 +1,6 @@
+import 'package:check_out/features/checkout_screen/presentation/widgets/date.dart';
 import 'package:check_out/features/checkout_screen/presentation/widgets/headings.dart';
+import 'package:check_out/features/checkout_screen/presentation/widgets/time.dart';
 
 import 'package:flutter/material.dart';
 
@@ -66,7 +68,8 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
                       Booking(),
                       Sizedbox(),
                       Heading(heading: "Service Time and Date"),
-                      Sizedbox(),
+                      Time(),
+                      Datecheck(),
                       Sizedbox(),
                       Heading(heading: "Additional Information"),
                     ],
