@@ -1,29 +1,35 @@
 import 'package:flutter/material.dart';
 
-class Section3 extends StatefulWidget {
-  const Section3({Key? key}) : super(key: key);
+class HomeAddress extends StatefulWidget {
+  const HomeAddress({Key? key}) : super(key: key);
 
   @override
-  _Section3State createState() => _Section3State();
+  _HomeAddressState createState() => _HomeAddressState();
 }
 
-class _Section3State extends State<Section3> {
+class _HomeAddressState extends State<HomeAddress> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-        leading: SizedBox(
-          child: Image.asset(
-            "assets/images/mechanic.png",
-            // height: 100,
+        leading: Container(
+          decoration: BoxDecoration(
+              color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(5)),
+          child: Padding(
+            padding: const EdgeInsets.all(14.0),
+            child: Image.asset(
+              "assets/images/location.png",
+              // height: 100,
+            ),
           ),
         ),
         title: Text(
-          "Aircon Maintenance",
+          "Home Address",
           style: TextStyle(
-              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w600),
+              fontSize: 18, color: Colors.black, fontWeight: FontWeight.w700),
         ),
         subtitle: Text(
-          "One time service",
+          "Soo 16 Sandilands Road 546080",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(

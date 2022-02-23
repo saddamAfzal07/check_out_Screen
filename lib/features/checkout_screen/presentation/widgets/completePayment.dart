@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Section4 extends StatefulWidget {
-  const Section4({Key? key}) : super(key: key);
+class CompletePayment extends StatefulWidget {
+  const CompletePayment({Key? key}) : super(key: key);
 
   @override
-  _Section4State createState() => _Section4State();
+  _CompletePaymentState createState() => _CompletePaymentState();
 }
 
-class _Section4State extends State<Section4> {
+class _CompletePaymentState extends State<CompletePayment> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
@@ -68,7 +68,7 @@ class _Section4State extends State<Section4> {
               ),
             ),
             SizedBox(
-              height: size.height * 0.04,
+              height: size.height * 0.03,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -101,7 +101,7 @@ class _Section4State extends State<Section4> {
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(12)),
-                margin: EdgeInsets.symmetric(horizontal: 20),
+                margin: EdgeInsets.symmetric(horizontal: 24),
                 height: 60,
                 width: double.infinity,
                 child: Row(
@@ -110,9 +110,9 @@ class _Section4State extends State<Section4> {
                     Text(
                       "Complete Payment",
                       style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                      ),
+                          fontSize: 20,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w700),
                     ),
                     SizedBox(
                       width: 6,

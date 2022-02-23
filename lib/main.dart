@@ -1,6 +1,7 @@
-import 'package:check_out/screens/checkout_screen/check_out.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'features/checkout_screen/presentation/check_out.dart';
 
 void main() {
   runApp(const MyApp());

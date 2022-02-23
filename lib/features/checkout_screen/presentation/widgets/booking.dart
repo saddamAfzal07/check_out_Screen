@@ -1,33 +1,29 @@
 import 'package:flutter/material.dart';
 
-class Section2 extends StatefulWidget {
-  const Section2({Key? key}) : super(key: key);
+class Booking extends StatefulWidget {
+  const Booking({Key? key}) : super(key: key);
 
   @override
-  _Section2State createState() => _Section2State();
+  _BookingState createState() => _BookingState();
 }
 
-class _Section2State extends State<Section2> {
+class _BookingState extends State<Booking> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-        leading: Container(
-          // height: ,
-          decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(5)),
+        leading: SizedBox(
           child: Image.asset(
-            "assets/images/card.png",
+            "assets/images/mechanic.png",
             // height: 100,
           ),
         ),
         title: Text(
-          "Butler Balance",
+          "Aircon Maintenance",
           style: TextStyle(
-              fontSize: 16, color: Colors.black, fontWeight: FontWeight.bold),
+              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
         ),
         subtitle: Text(
-          "\$900.98",
+          "One time service",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(

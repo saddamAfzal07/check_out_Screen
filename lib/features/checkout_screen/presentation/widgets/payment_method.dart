@@ -1,35 +1,33 @@
 import 'package:flutter/material.dart';
 
-class Section1 extends StatefulWidget {
-  const Section1({Key? key}) : super(key: key);
+class PaymentMethod extends StatefulWidget {
+  const PaymentMethod({Key? key}) : super(key: key);
 
   @override
-  _Section1State createState() => _Section1State();
+  _PaymentMethodState createState() => _PaymentMethodState();
 }
 
-class _Section1State extends State<Section1> {
+class _PaymentMethodState extends State<PaymentMethod> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
         leading: Container(
+          // height: ,
           decoration: BoxDecoration(
               color: Colors.grey.shade200,
               borderRadius: BorderRadius.circular(5)),
-          child: Padding(
-            padding: const EdgeInsets.all(14.0),
-            child: Image.asset(
-              "assets/images/location.png",
-              // height: 100,
-            ),
+          child: Image.asset(
+            "assets/images/card.png",
+            // height: 100,
           ),
         ),
         title: Text(
-          "Home Address",
+          "Butler Balance",
           style: TextStyle(
-              fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold),
+              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
         ),
         subtitle: Text(
-          "Soo 16 Sandilands Road 546080",
+          "\$900.98",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(
