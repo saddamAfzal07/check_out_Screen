@@ -23,65 +23,113 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        leading: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.arrow_back,
+              color: Colors.black,
+              size: 34,
+            )),
+        elevation: 0,
         backgroundColor: Colors.white,
-        appBar: AppBar(
-          leading: IconButton(
-              onPressed: () {},
-              icon: Icon(
-                Icons.arrow_back,
-                color: Colors.black,
-                size: 34,
-              )),
-          elevation: 0,
-          backgroundColor: Colors.white,
-          title: Text(
-            "Checkout",
-            style: TextStyle(
-                fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
+        title: Text(
+          "Checkout",
+          style: TextStyle(
+              fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        body: CustomScrollView(slivers: [
-          SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
-                      Sizedbox(),
-                      Heading(heading: "Address"),
-                      Sizedbox(),
-                      HomeAddress(),
-                      Sizedbox(),
-                      Divider(),
-                      Sizedbox(),
-                      Heading(heading: "Payment Method"),
-                      Sizedbox(),
-                      PaymentMethod(),
-                      Sizedbox(),
-                      Divider(),
-                      Heading(heading: "Your Booking"),
-                      Sizedbox(),
-                      Booking(),
-                      Sizedbox(),
-                      Heading(heading: "Service Time and Date"),
-                      Time(),
-                      Datecheck(),
-                      Sizedbox(),
-                      Heading(heading: "Additional Information"),
-                    ],
+        centerTitle: true,
+      ),
+      body: CustomScrollView(slivers: [
+        SliverFillRemaining(
+          child: Column(
+            children: <Widget>[
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: const [
+                        Sizedbox(),
+                        Heading(heading: "Address"),
+                        Sizedbox(),
+                        HomeAddress(),
+                        Sizedbox(),
+                        Divider(),
+                        Sizedbox(),
+                        Heading(heading: "Payment Method"),
+                        Sizedbox(),
+                        PaymentMethod(),
+                        Sizedbox(),
+                        Divider(),
+                        Sizedbox(),
+                        Heading(heading: "Your Booking"),
+                        Sizedbox(),
+                        Booking(),
+                        Sizedbox(),
+                        Heading(heading: "Service Time and Date"),
+                        Time(),
+                        Datecheck(),
+                        Sizedbox(),
+                        Heading(heading: "Additional Information"),
+                        Sizedbox(),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(
-                  height: 10,
-                ),
-                CompletePayment(),
-              ],
-            ),
-          )
-        ]));
+              ),
+              CompletePayment(),
+            ],
+          ),
+        ),
+      ]),
+    );
+
+    // return Scaffold(
+
+    //     body: CustomScrollView(slivers: [
+    //       SliverFillRemaining(
+    //         hasScrollBody: false,
+    //         child: Column(
+    //           children: [
+    //             Padding(
+    //               padding: const EdgeInsets.symmetric(horizontal: 10),
+    //               child: Column(
+    //                 crossAxisAlignment: CrossAxisAlignment.start,
+    //                 children: const [
+    //                   Sizedbox(),
+    //                   Heading(heading: "Address"),
+    //                   Sizedbox(),
+    //                   HomeAddress(),
+    //                   Sizedbox(),
+    //                   Divider(),
+    //                   Sizedbox(),
+    //                   Heading(heading: "Payment Method"),
+    //                   Sizedbox(),
+    //                   PaymentMethod(),
+    //                   Sizedbox(),
+    //                   Divider(),
+    //                   Heading(heading: "Your Booking"),
+    //                   Sizedbox(),
+    //                   Booking(),
+    //                   Sizedbox(),
+    //                   Heading(heading: "Service Time and Date"),
+    //                   Time(),
+    //                   Datecheck(),
+    //                   Sizedbox(),
+    //                   Heading(heading: "Additional Information"),
+    //                 ],
+    //               ),
+    //             ),
+    //             SizedBox(
+    //               height: 10,
+    //             ),
+    //             CompletePayment(),
+    //           ],
+    //         ),
+    //       )
+    //     ]));
   }
 }
