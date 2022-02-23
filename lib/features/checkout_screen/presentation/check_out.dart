@@ -86,50 +86,5 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
         ),
       ]),
     );
-
-    // return Scaffold(
-
-    //     body: CustomScrollView(slivers: [
-    //       SliverFillRemaining(
-    //         hasScrollBody: false,
-    //         child: Column(
-    //           children: [
-    //             Padding(
-    //               padding: const EdgeInsets.symmetric(horizontal: 10),
-    //               child: Column(
-    //                 crossAxisAlignment: CrossAxisAlignment.start,
-    //                 children: const [
-    //                   Sizedbox(),
-    //                   Heading(heading: "Address"),
-    //                   Sizedbox(),
-    //                   HomeAddress(),
-    //                   Sizedbox(),
-    //                   Divider(),
-    //                   Sizedbox(),
-    //                   Heading(heading: "Payment Method"),
-    //                   Sizedbox(),
-    //                   PaymentMethod(),
-    //                   Sizedbox(),
-    //                   Divider(),
-    //                   Heading(heading: "Your Booking"),
-    //                   Sizedbox(),
-    //                   Booking(),
-    //                   Sizedbox(),
-    //                   Heading(heading: "Service Time and Date"),
-    //                   Time(),
-    //                   Datecheck(),
-    //                   Sizedbox(),
-    //                   Heading(heading: "Additional Information"),
-    //                 ],
-    //               ),
-    //             ),
-    //             SizedBox(
-    //               height: 10,
-    //             ),
-    //             CompletePayment(),
-    //           ],
-    //         ),
-    //       )
-    //     ]));
   }
 }
