@@ -17,10 +17,13 @@ class _BookingState extends State<Booking> {
             // height: 100,
           ),
         ),
-        title: Text(
-          "Aircon Maintenance",
-          style: TextStyle(
-              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+        title: Padding(
+          padding: const EdgeInsets.only(bottom: 3),
+          child: Text(
+            "Aircon Maintenance",
+            style: TextStyle(
+                fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+          ),
         ),
         subtitle: Text(
           "One time service",

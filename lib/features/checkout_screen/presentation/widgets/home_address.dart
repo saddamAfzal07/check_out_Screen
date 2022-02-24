@@ -23,10 +23,13 @@ class _HomeAddressState extends State<HomeAddress> {
             ),
           ),
         ),
-        title: Text(
-          "Home Address",
-          style: TextStyle(
-              fontSize: 18, color: Colors.black, fontWeight: FontWeight.w700),
+        title: Padding(
+          padding: const EdgeInsets.only(bottom: 3),
+          child: Text(
+            "Home Address",
+            style: TextStyle(
+                fontSize: 18, color: Colors.black, fontWeight: FontWeight.w700),
+          ),
         ),
         subtitle: Text(
           "Soo 16 Sandilands Road 546080",

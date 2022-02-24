@@ -21,10 +21,13 @@ class _PaymentMethodState extends State<PaymentMethod> {
             // height: 100,
           ),
         ),
-        title: Text(
-          "Butler Balance",
-          style: TextStyle(
-              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+        title: Padding(
+          padding: const EdgeInsets.only(bottom: 3),
+          child: Text(
+            "Butler Balance",
+            style: TextStyle(
+                fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+          ),
         ),
         subtitle: Text(
           "\$900.98",
