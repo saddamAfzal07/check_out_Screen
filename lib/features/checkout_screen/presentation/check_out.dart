@@ -1,9 +1,10 @@
 import 'package:check_out/features/checkout_screen/presentation/widgets/date.dart';
-import 'package:check_out/features/checkout_screen/presentation/widgets/headings.dart';
+
 import 'package:check_out/features/checkout_screen/presentation/widgets/time.dart';
 
 import 'package:flutter/material.dart';
 
+import 'constant/headings.dart';
 import 'widgets/booking.dart';
 import 'widgets/completePayment.dart';
 
