@@ -29,6 +29,7 @@ class _DatecheckState extends State<Datecheck> {
     return Row(
       children: [
         IconButton(
+          padding: EdgeInsets.zero,
           onPressed: () {
             chosedate();
           },

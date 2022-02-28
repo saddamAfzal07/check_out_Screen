@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'features/checkout_screen/presentation/check_out.dart';
+import 'features/payment_screen/presentation/payment_successful.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,10 +22,8 @@ class MyApp extends StatelessWidget {
             statusBarColor: Colors.white,
           ),
         ),
-
-        // primarySwatch: Colors.blue,
       ),
-      home: const CheckoutScreen(),
+      home: const PaymentSuccessful(),
     );
   }
 }

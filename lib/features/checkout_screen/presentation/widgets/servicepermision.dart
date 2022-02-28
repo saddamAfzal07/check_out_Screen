@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Time extends StatefulWidget {
-  const Time({Key? key}) : super(key: key);
+class Servicedata extends StatefulWidget {
+  const Servicedata({Key? key}) : super(key: key);
 
   @override
-  _TimeState createState() => _TimeState();
+  _ServicedataState createState() => _ServicedataState();
 }
 
-class _TimeState extends State<Time> {
+class _ServicedataState extends State<Servicedata> {
   @override
   Widget build(BuildContext context) {
     return Row(
