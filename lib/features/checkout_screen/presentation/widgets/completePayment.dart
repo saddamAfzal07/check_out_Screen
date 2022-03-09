@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CompletePayment extends StatefulWidget {
   const CompletePayment({Key? key}) : super(key: key);
@@ -10,8 +12,6 @@ class CompletePayment extends StatefulWidget {
 class _CompletePaymentState extends State<CompletePayment> {
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
@@ -31,7 +31,7 @@ class _CompletePaymentState extends State<CompletePayment> {
       child: Column(
         children: [
           SizedBox(
-            height: size.height * 0.03,
+            height: 24.h,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -43,75 +43,85 @@ class _CompletePaymentState extends State<CompletePayment> {
             ],
           ),
           SizedBox(
-            height: size.height * 0.04,
+            height: 17.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "Service Charges",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.grey.shade600,
-                      fontWeight: FontWeight.w600),
+                  style: GoogleFonts.notoSans(
+                    textStyle: TextStyle(
+                        fontSize: 14.h,
+                        color: Color(0XFF6F6F6F),
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
                 Text(
                   "\$ 20.99 / hr",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.grey.shade600,
-                      fontWeight: FontWeight.w600),
+                  style: GoogleFonts.notoSans(
+                    textStyle: TextStyle(
+                        fontSize: 14.h,
+                        color: Color(0XFF6F6F6F),
+                        fontWeight: FontWeight.w500),
+                  ),
                 ),
               ],
             ),
           ),
           SizedBox(
-            height: size.height * 0.03,
+            height: 8.h,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 30),
+            padding: EdgeInsets.symmetric(horizontal: 24.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
                   "Total Cost",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                  style: GoogleFonts.notoSans(
+                    textStyle: TextStyle(
+                        fontSize: 16.h,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
                 Text(
                   "\$ 20.99",
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold),
+                  style: GoogleFonts.notoSans(
+                    textStyle: TextStyle(
+                        fontSize: 16.h,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
               ],
             ),
           ),
           SizedBox(
-            height: size.height * 0.06,
+            height: 24.h,
           ),
           InkWell(
             onTap: () {},
             child: Container(
               decoration: BoxDecoration(
                   color: Colors.black, borderRadius: BorderRadius.circular(12)),
-              margin: EdgeInsets.symmetric(horizontal: 24),
+              margin: EdgeInsets.symmetric(horizontal: 24.w),
               height: 60,
               width: double.infinity,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
                     "Complete Payment",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w700),
+                    style: GoogleFonts.notoSans(
+                      textStyle: TextStyle(
+                          fontSize: 14.h,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w600),
+                    ),
                   ),
                   SizedBox(
                     width: 6,
@@ -125,7 +135,7 @@ class _CompletePaymentState extends State<CompletePayment> {
             ),
           ),
           SizedBox(
-            height: size.height * 0.04,
+            height: 24.h,
           ),
         ],
       ),

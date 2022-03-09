@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeAddress extends StatefulWidget {
   const HomeAddress({Key? key}) : super(key: key);
@@ -19,25 +22,29 @@ class _HomeAddressState extends State<HomeAddress> {
             padding: const EdgeInsets.all(14.0),
             child: Image.asset(
               "assets/images/location.png",
-              // height: 100,
+              // height: 40.h,
+              // width: 40.w,
             ),
           ),
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(bottom: 3),
-          child: Text(
-            "Home Address",
-            style: TextStyle(
-                fontSize: 18, color: Colors.black, fontWeight: FontWeight.w700),
+        title: Text(
+          "Home Address",
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+                fontSize: 16.h,
+                color: Colors.black,
+                fontWeight: FontWeight.w700),
           ),
         ),
         subtitle: Text(
           "Soo 16 Sandilands Road 546080",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey.shade600,
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+                fontSize: 12.h,
+                color: Color(0xFF909090),
+                fontWeight: FontWeight.w700),
           ),
         ),
         trailing: Column(
@@ -46,8 +53,8 @@ class _HomeAddressState extends State<HomeAddress> {
               padding: const EdgeInsets.only(top: 10),
               child: Image.asset(
                 "assets/images/arrow.png",
-                // height: 50,
-                // width: 50,
+                height: 20.h,
+                width: 20.h,
               ),
             ),
           ],

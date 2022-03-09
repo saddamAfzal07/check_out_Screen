@@ -7,8 +7,8 @@ class Divider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Divider(
-      color: Colors.grey.shade200,
-      thickness: 2,
+      color: Color(0xFFF8F8F8),
+      thickness: 4,
     );
   }
 }

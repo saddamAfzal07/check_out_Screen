@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 
 class Datecheck extends StatefulWidget {
@@ -37,8 +39,12 @@ class _DatecheckState extends State<Datecheck> {
         ),
         Text(
           DateFormat.yMMMMEEEEd().format(selecteddate).toString(),
-          style: TextStyle(
-              fontSize: 16, color: Colors.black, fontWeight: FontWeight.w500),
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+                fontSize: 14.h,
+                color: Colors.black,
+                fontWeight: FontWeight.w400),
+          ),
         ),
       ],
     );

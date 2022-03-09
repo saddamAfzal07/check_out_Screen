@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PaymentMethod extends StatefulWidget {
   const PaymentMethod({Key? key}) : super(key: key);
@@ -11,31 +13,29 @@ class _PaymentMethodState extends State<PaymentMethod> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-        leading: Container(
-          // height: ,
-          decoration: BoxDecoration(
-              color: Colors.grey.shade200,
-              borderRadius: BorderRadius.circular(5)),
-          child: Image.asset(
-            "assets/images/card.png",
-            // height: 100,
-          ),
+        leading: Image.asset(
+          "assets/images/card.png",
+          height: 40.h,
+          width: 56.w,
         ),
-        title: Padding(
-          padding: const EdgeInsets.only(bottom: 3),
-          child: Text(
-            "Butler Balance",
-            style: TextStyle(
-                fontSize: 16, color: Colors.black, fontWeight: FontWeight.w700),
+        title: Text(
+          "Butler Balance",
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+                fontSize: 16.h,
+                color: Colors.black,
+                fontWeight: FontWeight.w700),
           ),
         ),
         subtitle: Text(
           "\$900.98",
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey.shade600,
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+              fontSize: 16.h,
+              color: Colors.grey.shade600,
+            ),
           ),
         ),
         trailing: Column(

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Time extends StatefulWidget {
   const Time({Key? key}) : super(key: key);
@@ -19,8 +21,12 @@ class _TimeState extends State<Time> {
         ),
         Text(
           "8:00 AM",
-          style: TextStyle(
-              fontSize: 18, color: Colors.black, fontWeight: FontWeight.w500),
+          style: GoogleFonts.notoSans(
+            textStyle: TextStyle(
+                fontSize: 14.h,
+                color: Colors.black,
+                fontWeight: FontWeight.w400),
+          ),
         ),
       ],
     );

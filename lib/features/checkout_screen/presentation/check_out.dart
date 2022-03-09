@@ -10,7 +10,8 @@ import 'widgets/completePayment.dart';
 
 import 'widgets/home_address.dart';
 import 'widgets/payment_method.dart';
-import 'widgets/sizedbox.dart';
+import 'widgets/verticalspace.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CheckoutScreen extends StatefulWidget {
   const CheckoutScreen({Key? key}) : super(key: key);
@@ -22,7 +23,6 @@ class CheckoutScreen extends StatefulWidget {
 class _CheckoutScreenState extends State<CheckoutScreen> {
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -38,7 +38,7 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
         title: Text(
           "Checkout",
           style: TextStyle(
-              fontSize: 24, color: Colors.black, fontWeight: FontWeight.bold),
+              fontSize: 24.h, color: Colors.black, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
       ),
@@ -49,33 +49,34 @@ class _CheckoutScreenState extends State<CheckoutScreen> {
               Expanded(
                 child: SingleChildScrollView(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10.w),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
-                        Sizedbox(),
+                        Verticalspace(),
                         Heading(heading: "Address"),
-                        Sizedbox(),
+                        Verticalspace(),
                         HomeAddress(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Divider(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Heading(heading: "Payment Method"),
-                        Sizedbox(),
+                        Verticalspace(),
                         PaymentMethod(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Divider(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Heading(heading: "Your Booking"),
-                        Sizedbox(),
+                        Verticalspace(),
                         Booking(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Heading(heading: "Service Time and Date"),
+                        Verticalspace(),
                         Time(),
                         Datecheck(),
-                        Sizedbox(),
+                        Verticalspace(),
                         Heading(heading: "Additional Information"),
-                        Sizedbox(),
+                        Verticalspace(),
                       ],
                     ),
                   ),
